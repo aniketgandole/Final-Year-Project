@@ -1,0 +1,22 @@
+{
+  "name": "PhishAlert",
+  "version": "1.1.0",
+  "description": "An Intelligent Browser Extension For Phishing Detection",
+  "permissions": ["activeTab","declarativeContent", "storage", "webNavigation"],
+  "background": {
+    "service_worker": "js/bg-loader.js"
+  },
+  "action": {
+    "default_popup": "plugin_ui.html"
+  },
+  "icons": {
+    "128": "icon/phishalert.png"
+  },
+  "content_scripts":[
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["js/features.js"]
+    }
+  ],
+  "manifest_version": 3
+}

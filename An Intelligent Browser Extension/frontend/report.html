@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Report Phishing Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto+Mono" rel="stylesheet">
+  <link href="plugin_ui.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <header class="plugin_name">
+    <h1>Report Website</h1>
+    <form id="reportForm">
+      <label for="websiteLink">Website URL:</label><br>
+      <input type="text" id="websiteLink" name="websiteLink" required aria-label="Website URL"><br><br>
+      <label for="shortMsg">Description of Phishing:</label><br>
+      <textarea id="shortMsg" name="shortMsg" required aria-label="Description of Phishing"></textarea><br><br>
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </header>
+
+  <script src="js/report.js" type="text/javascript"></script>
+</body>
+</html>
